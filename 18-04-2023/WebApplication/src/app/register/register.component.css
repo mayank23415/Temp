@@ -1,0 +1,29 @@
+
+
+.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+.form-container {
+  border: 1px black solid;
+}
+
+.form {
+  padding: 5%;
+}
+
+input {
+  height: 20px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.my-button {
+  width: 100px !important;
+  height: 25px;
+  min-width: unset !important;
+}
+
+.form-container{
+    font-family: monospace;
+}

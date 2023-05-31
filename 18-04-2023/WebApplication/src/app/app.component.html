@@ -1,0 +1,23 @@
+<ng-container>
+  <mat-toolbar class="header">
+    <mat-icon fontIcon="apps" (click)="sidenav.toggle()"></mat-icon>
+    <button mat-button (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav class="sidenav" mode="side" closed>
+      <mat-nav-list class="links">
+        <a mat-list-item routerLink="home">Home</a>
+        <a mat-list-item routerLink="products">Products</a>
+        <a mat-list-item routerLink="register">Register</a>
+        <a mat-list-item routerLink="login">Login</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <mat-toolbar class="footer">
+    Footer
+  </mat-toolbar>
+</ng-container>

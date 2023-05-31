@@ -1,0 +1,40 @@
+<section class="form-container">
+  
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" class="form">
+      <h1>Reactive Form Example :</h1>
+      <p>
+        <label>First Name :</label>
+        <input  type="text" placeholder="First Name" formControlName="firstName">
+      </p>
+      <p>
+        <label>Last Name :</label>
+        <input type="text" placeholder="Last  Name" formControlName="lastName">
+      </p>
+      <p>
+        <label>Email:</label>
+        <input type="text" placeholder="Email" formControlName="_id">
+      </p>
+      <p>
+        <label>Password:</label>
+        <input type="text" placeholder="Password" formControlName="password">
+      </p>
+      <p>
+        <label>Role:</label>
+        <select formControlName="role">
+          <option value="Admin">Admin</option>
+          <option value="User">User</option>
+        </select>
+      </p>
+      
+      <p>
+        <label>Age:</label>
+        <input type="text" placeholder="Age" formControlName="age">
+      </p>
+      
+      <p>
+        <button mat-raised-button class="my-button" type="submit"  [disabled]="!reactiveForm.valid">Submit</button>
+      </p>
+  
+      
+    </form>
+  </section>

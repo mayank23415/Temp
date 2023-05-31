@@ -1,0 +1,23 @@
+<mat-toolbar class="product-filter">
+  <h1>Products</h1>
+  <div class="sort">
+    <div class="collection-sort">
+      <label>Filter by:</label>
+      <mat-select>
+        <mat-option value="/">All Products</mat-option>
+      </mat-select>
+    </div>
+  </div>
+
+</mat-toolbar>
+<section class="products">
+    <ng-container *ngFor="let product of product">
+        <mat-card class="product-card">
+            <mat-card-header class="product-info">
+              <mat-card-title>Polarized Filter</mat-card-title>
+              <mat-card-subtitle>$99.99</mat-card-subtitle>
+            </mat-card-header>
+            <img src="../../assets/wallpaperflare.com_wallpaper (1).jpg">
+          </mat-card>
+    </ng-container>  
+</section>
